@@ -8,13 +8,7 @@ class Solution {
      */
     function isPalindrome($x) {
         $string = (string)$x;
-        $array = str_split($string);
-        $reverseArray = array_reverse($array);
-        
-        if ($array === $reverseArray) {
-            return true;
-        }
-        return false;
+        return $string === strrev($string);
     }
 }
 
@@ -26,4 +20,3 @@ $test3 = $solution->isPalindrome(10);
 var_dump($test1);
 var_dump($test2);
 var_dump($test3);
-
