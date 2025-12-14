@@ -22,6 +22,10 @@ class Solution {
 			$reversedNumber *= -1;
 		}
 
+		if ($reversedNumber < -2147483648 || $reversedNumber > 2147483647) {
+            return 0;
+        }
+
 		return $reversedNumber;
     }
 }
